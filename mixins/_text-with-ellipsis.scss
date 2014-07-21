@@ -1,0 +1,13 @@
+//  ---------------------------------------------------------
+//  mixin to to get Text...
+//
+//  use:  @include text-with-ellipsis();
+//  depends on width
+//
+//  ---------------------------------------------------------
+
+@mixin text-with-ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

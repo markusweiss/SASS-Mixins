@@ -5,6 +5,7 @@ Feel free to use or commentate.
 ### Here i start collecting the Sass mixins i use:
 
 * [add-font](mixins/_add-font.scss)
+* [text-with-ellipsis (…)](mixins/_text-with-ellipsis.scss)
 
 
 ### Documentation
