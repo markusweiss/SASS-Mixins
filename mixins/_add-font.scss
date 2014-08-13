@@ -12,7 +12,9 @@
     -moz-osx-font-smoothing:grayscale;
     -webkit-font-smoothing:antialiased;
     font-smoothing:antialiased;
+    Info -> dont use for AndroidApps:
     text-rendering:optimizeLegibility;
+    (Its a Bug on Android Devices)
     --------------------------------------------------------- */
 
 @mixin add-font-face($font-family, $font-filename, $font-path: fonts, $font-use-svg: false) {
