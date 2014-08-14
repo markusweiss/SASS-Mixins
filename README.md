@@ -13,7 +13,7 @@ Feel free to use or commentate.
 
 How to use the mixin can be found in the header.
 
-In your main.scss import the mixin 
+In your main.scss import the mixin:
 
 `@import "mixins-folder/_add-font.scss";`
 
