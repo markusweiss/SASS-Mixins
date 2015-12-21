@@ -6,6 +6,7 @@ Feel free to use or commentate.
 
 * [add-font](mixins/_add-font.scss)
 * [from-to-animation](mixins/_from-to-animation.scss)
+* [pulse-animation](mixins/_pulse-animation.scss)
 * [text-with-ellipsis (…)](mixins/_text-with-ellipsis.scss)
 
 
@@ -17,6 +18,8 @@ In your main.scss import the mixin:
 
 `@import "mixins-folder/_add-font.scss";`
 
-`@import "mixins-folder/_from_to_animation.scss";`
+`@import "mixins-folder/_from-to-animation.scss";`
+
+`@import "mixins-folder/_pulse-animation.scss";`
 
 `@import "mixins-folder/_text-with-ellipsis.scss";`
