@@ -6,7 +6,8 @@
     optional add:
     font-path      default: fonts
     font-use-svg   default: false
-    (use till iOS 4.3, iOS >= 5.0 has .woff support)
+    (Android 4.4+ and iOS 5.1+ has .woff support)
+    (removed ttf support (Adroid 2.2+ and iOS 4.3+) if you need add manually)
 
     if you like it, add font smoothing to body in your css:
     -moz-osx-font-smoothing:grayscale;
@@ -22,8 +23,7 @@
     font-family: $font-family;
     src: url("#{$font-path}/#{$font-filename}.eot");
     src: url("#{$font-path}/#{$font-filename}.eot?#iefix") format("embedded-opentype"),
-    url("#{$font-path}/#{$font-filename}.woff") format("woff"),
-    url("#{$font-path}/#{$font-filename}.ttf") format("truetype");
+    url("#{$font-path}/#{$font-filename}.woff") format("woff");
     @if $font-use-svg {
     src: url("#{$font-path}/#{$font-filename}.svg##{$font-family}") format("svg");
     }
