@@ -1,0 +1,34 @@
+//  ---------------------------------------------------------
+//  mixin to animate from .. to with a keyframe animation
+//
+//  use:  @include from-to-animation(name, property, from-pos,to-pos);
+//  tip:  @include from-to-animation(testNavi, left, -320px, 0);
+//
+//  ---------------------------------------------------------
+
+@mixin from-to-animation($animation-name, $property, $from, $to) {
+  @-webkit-keyframes #{$animation-name} {
+    0% {
+      #{$property}:#{$from};
+    }
+    100% {
+      #{$property}:#{$to};
+    }
+  }
+  @-moz-keyframes #{$animation-name} {
+    0% {
+      #{$property}:#{$from};
+    }
+    100% {
+      #{$property}:#{$to};
+    }
+  }
+  @keyframes #{$animation-name} {
+    0% {
+      #{$property}:#{$from};
+    }
+    100% {
+      #{$property}:#{$to};
+    }
+  }
+}
