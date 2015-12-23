@@ -1,22 +1,22 @@
-/*  ---------------------------------------------------------
-    mixin to add webfonts
-
-    use: @include add-font-face ('[font-family]' ,'[filename]');
-
-    optional add:
-    font-path      default: fonts
-    font-use-svg   default: false
-    (Android 4.4+ and iOS 5.1+ has .woff support)
-    (removed ttf support (Adroid 2.2+ and iOS 4.3+) if you need add manually)
-
-    if you like it, add font smoothing to body in your css:
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-    Info -> dont use for Android Apps:
-    text-rendering:optimizeLegibility;
-    (Its a Bug on Android Devices)
-    --------------------------------------------------------- */
+//  ---------------------------------------------------------
+//  mixin to add webfonts
+//
+//  use: @include add-font-face ('[font-family]' ,'[filename]');
+//
+//  optional add:
+//  font-path      default: fonts
+//  font-use-svg   default: false
+//  (Android 4.4+ and iOS 5.1+ has .woff support)
+//  (removed ttf support (Adroid 2.2+ and iOS 4.3+) if you need add manually)
+//
+//  if you like it, add font smoothing to body in your css:
+//  -moz-osx-font-smoothing:grayscale;
+//  -webkit-font-smoothing:antialiased;
+//  font-smoothing:antialiased;
+//  Info -> dont use for Android Apps:
+//  text-rendering:optimizeLegibility;
+//  (Its a Bug on Android Devices)
+//  ---------------------------------------------------------
 
 @mixin add-font-face($font-family, $font-filename, $font-path: fonts, $font-use-svg: false) {
   @font-face {
